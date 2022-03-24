@@ -1,0 +1,202 @@
+<div class="bootsrap-wrapper" >
+
+  <div class="container ">
+
+    <div class="row mt20" >
+
+      <div class="col-md-6 offset-md-3">
+
+        <mat-card>
+
+
+
+        <div class="container text-center">
+
+          <img class="login-image" src="../../../assets/images/login-background.jpg">
+
+        </div>
+
+        <h1 class="text-center"> Sign Up </h1>
+
+
+        <!--{{user | json}}-->
+
+        <form (ngSubmit)="formSubmit()" >
+
+          <!--first name field-->
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label>First Name</mat-label>
+            <input
+              required
+
+              [(ngModel)]="user.firstName"
+              name="firstName"
+
+              matInput placeholder="Enter your First Name">
+            <mat-hint>Required the first name</mat-hint>
+
+          </mat-form-field>
+
+          <!--last name field-->
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label>Last Name</mat-label>
+            <input
+              required
+
+              [(ngModel)]="user.lastName"
+              name="lastName"
+
+              matInput placeholder="Enter your Last Name">
+            <mat-hint>Required the last name</mat-hint>
+          </mat-form-field>
+
+          <!--user name field-->
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label>User Name</mat-label>
+            <input
+              required
+
+              [(ngModel)]="user.username"
+              name="userName"
+
+              matInput placeholder="Enter your User Name">
+            <mat-hint>Required the user name</mat-hint>
+          </mat-form-field>
+
+          <!--address field-->
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label>Address</mat-label>
+            <input
+              required
+
+              [(ngModel)]="user.address"
+              name="address"
+
+              matInput placeholder="Enter your Address">
+            <mat-hint>Required the address</mat-hint>
+          </mat-form-field>
+
+          <!--email field-->
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label>Email Address</mat-label>
+            <input
+              required
+
+              [(ngModel)]="user.email"
+              name="email"
+
+              type="email" matInput placeholder="Enter your Email Address">
+            <mat-hint>Required the email address</mat-hint>
+          </mat-form-field>
+
+          <!--contact number field-->
+          <mat-form-field class="full-width-contact" appearance="outline">
+            <mat-label>Contact Number</mat-label>
+            <input
+              required
+
+              [(ngModel)]="user.contactNo"
+              name="contactNo"
+
+              matInput placeholder="Enter your Contact Number">
+            <mat-hint>Required the contact number</mat-hint>
+          </mat-form-field>
+
+
+          <!--joined date field-->
+          <mat-form-field class="full-width-joined" appearance="outline">
+            <mat-label>Joined Date</mat-label>
+            <input
+              required
+
+              [(ngModel)]="user.joinedDate"
+              name="joinedDate"
+
+              type="date" matInput placeholder="Enter your Joined Date">
+            <mat-hint>Required the joined date</mat-hint>
+          </mat-form-field>
+
+          <!--nic field-->
+          <mat-form-field class="full-width-nic" appearance="outline">
+            <mat-label>NIC</mat-label>
+            <input
+              required
+
+              [(ngModel)]="user.nic"
+              name="nic"
+
+              matInput placeholder="Enter your NIC">
+            <mat-hint>Required the nic</mat-hint>
+          </mat-form-field>
+
+          <!--dob field-->
+          <mat-form-field class="full-width-dob" appearance="outline">
+            <mat-label>Date of Birth</mat-label>
+            <input
+              required
+
+
+              [(ngModel)]="user.dateOfBirth"
+              name="dateOfBirth"
+
+              type="date" matInput placeholder="Enter your Date of Birth">
+            <mat-hint>Required the date of birth</mat-hint>
+          </mat-form-field>
+
+          <!--password field-->
+          <mat-form-field class="full-width-password" appearance="outline">
+            <mat-label>Password</mat-label>
+            <input
+              required
+
+              [(ngModel)]="user.password"
+              name="password"
+
+              type="password" matInput placeholder="Enter a Password">
+            <mat-hint>Required the password</mat-hint>
+          </mat-form-field>
+
+          <!--&lt;!&ndash;confirm password field&ndash;&gt;-->
+          <!--<mat-form-field class="full-width-confirm" appearance="outline">-->
+            <!--<mat-label>Confirm Password</mat-label>-->
+            <!--<input-->
+              <!--required-->
+
+              <!--type="password" matInput placeholder="Enter Password Again">-->
+          <!--</mat-form-field>-->
+
+
+
+          <div class="container text-center" style="margin-bottom: 10px;">
+
+            <button type="submit" mat-raised-button color="primary"> Register </button>
+
+            <button style="margin-left: 30px" mat-raised-button color="accent"> Clear </button>
+
+          </div>
+
+          <div class="button-row text-center"  style="margin-bottom: 20px;">
+          <p>Already have an account? <a class="text-link" routerLink="/login">Login</a></p>
+          </div>
+
+
+        </form>
+
+        </mat-card>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
