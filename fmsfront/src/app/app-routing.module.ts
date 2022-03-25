@@ -10,6 +10,7 @@ import {NormalGuard} from "./services/normal.guard";
 import {ProfileComponent} from "./pages/profile/profile.component";
 import {WelcomeComponent} from "./pages/admin/welcome/welcome.component";
 import {EmployeeComponent} from "./pages/admin/employee/employee.component";
+import {VehicleComponent} from "./pages/admin/vehicle/vehicle.component";
 
 const routes: Routes = [
   {
@@ -46,6 +47,10 @@ const routes: Routes = [
       {
         path: 'employee',
         component: EmployeeComponent,
+      },
+      {
+        path: 'vehicle',
+        component: VehicleComponent,
       },
     ],
   },

@@ -1,39 +1,104 @@
-<mat-card>
-  <mat-action-list>
+<!--<mat-card>-->
+  <!--<mat-action-list>-->
+<div class="slidebar">
 
-    <img src="https://thejournalofmhealth.com/wp-content/uploads/2021/04/5-Things-to-Consider-When-Selecting-a-Nursing-Program-Source-Unsplash.jpg" alt="" class="profile-image mat-elevation-z8">
+  <div>
 
-    <h3 class="name"> <b>Chandika Nirmani </b></h3>
-    <h3 class="designation"> Admin </h3>
+    <img src="https://thejournalofmhealth.com/wp-content/uploads/2021/04/5-Things-to-Consider-When-Selecting-a-Nursing-Program-Source-Unsplash.jpg" alt="" class="profile-image mt20 mat-elevation-z8">
 
-    <!--<mat-divider></mat-divider>-->
+    <h3 class="name text-center"> <b>Chandika Nirmani </b></h3>
+    <h3 class="designation text-center"> Admin </h3>
 
+  </div>
+
+    <mat-divider></mat-divider>
+
+
+  <mat-list-item >
     <button mat-button class="sidebar-button" routerLink="/admin" >
       <mat-icon mat-list-icon>home</mat-icon>
       <span> Home </span>
     </button>
+  </mat-list-item>
 
+  <mat-list-item >
     <button mat-button class="sidebar-button" routerLink="../admin/profile">
       <mat-icon mat-list-icon>account_circle</mat-icon>
       <span> Profile </span>
     </button>
+  </mat-list-item>
 
-    <button mat-button class="sidebar-button">
-      <mat-icon mat-list-icon>add_circle_outline</mat-icon>
-      <span> Fleet </span>
-    </button>
+  <mat-list-item >
 
+        <button mat-button class="sidebar-button"  (click)="showFiller = !showFiller">
+          <mat-icon mat-list-icon>add_circle_outline</mat-icon>
+
+          <span> Fleet  </span>
+          <mat-icon class="change"> chevron_right </mat-icon>
+        </button>
+
+    <mat-list>
+      <div mat-subheaders *ngIf="showFiller">
+      <mat-list-item >
+        <button mat-button class="sidebar-button" routerLink="../admin/employee">
+          <!--<mat-icon mat-list-icon>add_circle_outline</mat-icon>-->
+          <span> Employee </span>
+        </button>
+      </mat-list-item>
+      <mat-list-item>
+        <button mat-button class="sidebar-button" routerLink="../admin/vehicle">
+          <!--<mat-icon mat-list-icon>add_circle_outline</mat-icon>-->
+          <span> Vehicle </span>
+        </button>
+      </mat-list-item>
+      <mat-list-item>
+        <button mat-button class="sidebar-button">
+          <!--<mat-icon mat-list-icon>add_circle_outline</mat-icon>-->
+          <span> Tire </span>
+        </button>
+      </mat-list-item>
+      <mat-list-item>
+        <button mat-button class="sidebar-button">
+          <!--<mat-icon mat-list-icon>add_circle_outline</mat-icon>-->
+          <span> Fuel </span>
+        </button>
+      </mat-list-item>
+      <mat-list-item>
+        <button mat-button class="sidebar-button">
+          <!--<mat-icon mat-list-icon>add_circle_outline</mat-icon>-->
+          <span> Job </span>
+        </button>
+      </mat-list-item>
+      <mat-list-item>
+        <button mat-button class="sidebar-button">
+          <!--<mat-icon mat-list-icon>add_circle_outline</mat-icon>-->
+          <span> Services </span>
+        </button>
+      </mat-list-item>
+      </div>
+
+    </mat-list>
+  </mat-list-item>
+
+  <mat-divider></mat-divider>
+
+  <mat-list-item >
     <button mat-button class="sidebar-button">
       <mat-icon mat-list-icon>logout</mat-icon>
       <span> Logout </span>
     </button>
+  </mat-list-item>
+
+</div>
 
 
 
 
-  </mat-action-list>
 
 
-</mat-card>
+  <!--</mat-action-list>-->
+
+
+<!--</mat-card>-->
 
 
