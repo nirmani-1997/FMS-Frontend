@@ -46,6 +46,7 @@ import { WelcomeComponent } from './pages/admin/welcome/welcome.component';
 import { EmployeeCreationComponent } from './pages/admin/employee/employee-creation/employee-creation.component';
 import { EmployeeSearchComponent } from './pages/admin/employee/employee-search/employee-search.component';
 import { EmployeeComponent } from './pages/admin/employee/employee.component';
+import { VehicleComponent } from './pages/admin/vehicle/vehicle.component';
 
 
 @NgModule({
@@ -64,6 +65,7 @@ import { EmployeeComponent } from './pages/admin/employee/employee.component';
     EmployeeCreationComponent,
     EmployeeSearchComponent,
     EmployeeComponent,
+    VehicleComponent,
 
   ],
   imports: [

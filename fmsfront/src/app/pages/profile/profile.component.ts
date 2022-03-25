@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {LoginService} from "../../services/login.service";
-import {User} from "./user";
+// import {User} from "./user";
 import { Observable } from "rxjs";
 import {Router} from "@angular/router";
 
@@ -11,12 +11,17 @@ import {Router} from "@angular/router";
   styleUrls: ['./profile.component.scss']
 })
 export class ProfileComponent implements OnInit {
+
+  data = {
+    name: "chandika Nirmani"
+  };
+
   // username: string;
   // // public user: string[];
   // // users:string;
   // user: User;
 
-  users: Observable<User[]>;
+  // users: Observable<User[]>;
 
   constructor(private login:LoginService){
 
@@ -24,7 +29,7 @@ export class ProfileComponent implements OnInit {
 
   ngOnInit() {
 
-    this.users=this.login.getUser();
+    // this.users=this.login.getUser();
 
     // this.user = new User();
     // this.user=this.login.getUser();

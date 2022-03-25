@@ -1,19 +1,32 @@
-mat-card {
-  background-color: rgba(0, 0, 0, 0);
-}
+//div {
+//  .slidebar {
+//    background-color:yellow;
+//    padding-left: 20px;
+//  }
+//}
+
+
 
 .sidebar-button {
-  width: 100%;
+  width: 75%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   font-size: 1rem;
+  margin-left: 30px;
+  margin-top: 10px;
+
+
 
   mat-icon {
     margin-right: 8px;
   }
 
 }
+//
+//mat-button.change{
+//  color: red;
+//}
 
 .name {
   margin: 0;
@@ -28,12 +41,6 @@ mat-card {
 
 }
 
-mat-divider {
-  margin-top: 8px;
-  margin-bottom: 16px;
-  background-color: black;
-}
-
 .profile-image {
   max-width: 150px;
   max-height: 200px;
@@ -41,3 +48,4 @@ mat-divider {
   border: 2px solid #007bff;;
   border-radius: 10px;
 }
+
