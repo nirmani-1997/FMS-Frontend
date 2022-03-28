@@ -1,1 +1,72 @@
-<p>employee-search works!</p>
+
+<mat-card>
+  <mat-card class="container mt20">
+
+  <div fxLayout="row wrap" fxLayoutAlign="space-between center">
+    <div fxFlex="100" fxFlex.gt-md="20">
+      <mat-form-field class="full-wid mrgn-b-md">
+        <mat-label>Username</mat-label>
+        <input matInput placeholder="Username" name="username">
+      </mat-form-field>
+    </div>
+    <div  fxFlex="100" fxFlex.gt-md="80">
+      <mat-form-field class="full-wid mrgn-b-md">
+        <mat-label>NIC</mat-label>
+        <input matInput placeholder="NIC" name="nic">
+      </mat-form-field>
+    </div>
+  </div>
+
+
+    <div fxLayout="row wrap" fxLayoutAlign="space-between center">
+      <div fxFlex="100" fxFlex.gt-md="20">
+        <mat-form-field class="full-wid mrgn-b-md">
+          <mat-label> Joined Date</mat-label>
+          <input type="date" matInput name="joinedDate">
+        </mat-form-field>
+      </div>
+      <div  fxFlex="100" fxFlex.gt-md="80">
+        <mat-form-field class="full-wid mrgn-b-md">
+          <mat-label>Licence Number</mat-label>
+          <input matInput placeholder="Licence number" name="licenceNumber">
+        </mat-form-field>
+      </div>
+    </div>
+
+    <div fxLayout="row wrap" fxLayoutAlign="space-between center">
+      <div fxFlex="100" fxFlex.gt-md="20">
+        <mat-form-field class="full-wid mrgn-b-md">
+          <mat-select placeholder="Designation" name="designation">
+            <mat-option value="1">Driver</mat-option>
+            <mat-option value="2">Helper</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div  fxFlex="100" fxFlex.gt-md="80">
+        <mat-form-field class="full-wid mrgn-b-md">
+          <mat-label>Status</mat-label>
+          <!--<mat-radio-group name="status" required>-->
+          <!--<mat-radio-button value="1">Option 1</mat-radio-button>-->
+          <!--<mat-radio-button value="2">Option 2</mat-radio-button>-->
+          <!--</mat-radio-group>-->
+          <input type="text" matInput name="status">
+        </mat-form-field>
+      </div>
+    </div>
+
+
+
+    <div fxLayout="row" fxLayoutAlign="start">
+
+        <!--<button (click)="searchEmployee()" mat-raised-button color="accent" type="submit">Search</button>-->
+        <button mat-raised-button color="primary" type="submit" class="mr10 ml20">Search</button>
+        <!--<button (click)="VehicleSearchform.resetForm()" mat-raised-button color="warn" type="submit">Reset</button>-->
+        <button mat-raised-button color="warn" type="submit">Reset</button>
+
+
+    </div>
+
+
+  </mat-card>
+
+</mat-card>

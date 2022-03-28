@@ -1,0 +1,72 @@
+
+<mat-card>
+  <mat-card class="container mt20">
+
+    <div fxLayout="row wrap" fxLayoutAlign="space-between center">
+      <div fxFlex="100" fxFlex.gt-md="20">
+        <mat-form-field class="full-wid mrgn-b-md">
+          <mat-label>Tire Number</mat-label>
+          <input matInput placeholder="Tire number" name="tireNumber">
+        </mat-form-field>
+      </div>
+      <div  fxFlex="100" fxFlex.gt-md="80">
+        <mat-form-field class="full-wid mrgn-b-md">
+          <mat-label>Tire Type</mat-label>
+          <input matInput placeholder="Tire type" name="tireType">
+        </mat-form-field>
+      </div>
+    </div>
+
+
+    <div fxLayout="row wrap" fxLayoutAlign="space-between center">
+      <div fxFlex="100" fxFlex.gt-md="20">
+        <mat-form-field class="full-wid mrgn-b-md">
+          <mat-label>Purchased Date</mat-label>
+          <!--<input matInput [matDatepicker]="picker">-->
+          <!--<mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>-->
+          <!--<mat-datepicker #picker></mat-datepicker>-->
+          <input type="date" matInput name="purchasedDate">
+        </mat-form-field>
+      </div>
+      <div  fxFlex="100" fxFlex.gt-md="80">
+        <mat-form-field class="full-wid mrgn-b-md">
+          <mat-select placeholder="Brand name" name="brandName" required>
+            <mat-option value="1">abc</mat-option>
+            <mat-option value="2">xyz</mat-option>
+            <mat-option value="2">lmn</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+    </div>
+
+    <div fxLayout="row wrap" fxLayoutAlign="space-between center">
+      <div fxFlex="100" fxFlex.gt-md="20">
+        <mat-form-field class="full-wid mrgn-b-md">
+          <mat-label>Status</mat-label>
+          <!--<mat-radio-group name="status" required>-->
+          <!--<mat-radio-button value="1">Option 1</mat-radio-button>-->
+          <!--<mat-radio-button value="2">Option 2</mat-radio-button>-->
+          <!--</mat-radio-group>-->
+          <input type="text" matInput name="status" required>
+        </mat-form-field>
+      </div>
+
+    </div>
+
+
+
+    <div fxLayout="row" fxLayoutAlign="start">
+
+      <!--<button (click)="searchEmployee()" mat-raised-button color="accent" type="submit">Search</button>-->
+      <button mat-raised-button color="primary" type="submit" class="mr10 ml20">Search</button>
+      <!--<button (click)="VehicleSearchform.resetForm()" mat-raised-button color="warn" type="submit">Reset</button>-->
+      <button mat-raised-button color="warn" type="submit">Reset</button>
+
+
+    </div>
+
+
+  </mat-card>
+
+</mat-card>
+

@@ -11,6 +11,10 @@ import {ProfileComponent} from "./pages/profile/profile.component";
 import {WelcomeComponent} from "./pages/admin/welcome/welcome.component";
 import {EmployeeComponent} from "./pages/admin/employee/employee.component";
 import {VehicleComponent} from "./pages/admin/vehicle/vehicle.component";
+import {TireComponent} from "./pages/admin/tire/tire.component";
+import {FuelComponent} from "./pages/admin/fuel/fuel.component";
+import {JobComponent} from "./pages/admin/job/job.component";
+import {ServicesComponent} from "./pages/admin/services/services.component";
 
 const routes: Routes = [
   {
@@ -51,6 +55,22 @@ const routes: Routes = [
       {
         path: 'vehicle',
         component: VehicleComponent,
+      },
+      {
+        path: 'tire',
+        component: TireComponent,
+      },
+      {
+        path: 'fuel',
+        component: FuelComponent,
+      },
+      {
+        path: 'job',
+        component: JobComponent,
+      },
+      {
+        path: 'services',
+        component: ServicesComponent,
       },
     ],
   },

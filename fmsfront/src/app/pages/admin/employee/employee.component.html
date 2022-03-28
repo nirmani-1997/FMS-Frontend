@@ -1,21 +1,40 @@
-<mat-card fxFlex="100%">
-  <div class="gene-card-content">
-    <!--<mat-tab-group (selectedTabChange)="onTabChange($event)">-->
-      <mat-tab-group>
+<!--<mat-card fxFlex="100%">-->
+  <!--<div class="gene-card-content">-->
+    <!--&lt;!&ndash;<mat-tab-group (selectedTabChange)="onTabChange($event)">&ndash;&gt;-->
+      <!--<mat-tab-group>-->
 
-      <mat-tab label="Employee">
-        <div class="pad-t-mat pad-b-mat">
-          <app-employee-creation></app-employee-creation>
-        </div>
-      </mat-tab>
+      <!--<mat-tab label="Employee">-->
+        <!--<div class="pad-t-mat pad-b-mat">-->
+          <!--<app-employee-creation></app-employee-creation>-->
+        <!--</div>-->
+      <!--</mat-tab>-->
 
-      <mat-tab label="Employee Search">
-        <div class="pad-t-mat pad-b-mat">
-          <app-employee-search></app-employee-search>
-        </div>
-      </mat-tab>
+      <!--<mat-tab label="Employee Search">-->
+        <!--<div class="pad-t-mat pad-b-mat">-->
+          <!--<app-employee-search></app-employee-search>-->
+        <!--</div>-->
+      <!--</mat-tab>-->
 
-    </mat-tab-group>
-  </div>
-</mat-card>
+    <!--</mat-tab-group>-->
+  <!--</div>-->
+<!--</mat-card>-->
+
+<div class="content mat-elevation-z4 text-center">
+  <mat-tab-group>
+
+    <mat-tab label="Employee">
+      <div class="pad-t-mat pad-b-mat">
+        <app-employee-creation></app-employee-creation>
+      </div>
+    </mat-tab>
+
+    <mat-tab label="Employee Search">
+      <div class="pad-t-mat pad-b-mat">
+        <app-employee-search></app-employee-search>
+      </div>
+    </mat-tab>
+
+  </mat-tab-group>
+
+</div>
 

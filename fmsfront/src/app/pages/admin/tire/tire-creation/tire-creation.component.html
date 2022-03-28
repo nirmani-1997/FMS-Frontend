@@ -1,0 +1,140 @@
+<div fxLayout="row wrap" fxLayoutAlign=" start" class="gene-form-wizard">
+  <mat-card fxFlex="100%">
+    <form #tireForm="ngForm">
+
+      <div class="gene-card-title">
+        <div fxLayout="row" fxLayoutAlign="start center">
+          <div fxLayout="column">
+            <h4><b>{{'Tire Information'}}</b></h4>
+          </div>
+          <span fxFlex></span>
+        </div>
+
+        <mat-divider></mat-divider>
+      </div>
+
+      <div class="gene-card-content">
+
+
+            <mat-card class="container mt20 mb10">
+
+              <div fxLayout="row wrap" fxLayoutAlign="space-between center">
+                <div fxFlex="100" fxFlex.gt-md="20">
+                  <mat-form-field class="full-wid mrgn-b-md">
+                    <mat-label>Tire Number</mat-label>
+                    <input matInput placeholder="Tire number" name="tireNumber" required>
+                  </mat-form-field>
+                </div>
+                <div  fxFlex="100" fxFlex.gt-md="80">
+                  <mat-form-field class="full-wid mrgn-b-md">
+                    <mat-label>Tire Type</mat-label>
+                    <input matInput placeholder="Tire type" name="tireType" required>
+                  </mat-form-field>
+                </div>
+              </div>
+
+              <div fxLayout="row wrap" fxLayoutAlign="space-between center">
+                <div fxFlex="100" fxFlex.gt-md="20">
+                  <mat-form-field class="full-wid mrgn-b-md">
+                    <mat-label>Tire Width</mat-label>
+                    <input matInput placeholder="Ex: 10mm" name="tireWidth" required>
+                  </mat-form-field>
+                </div>
+                <div  fxFlex="100" fxFlex.gt-md="80">
+                  <mat-form-field class="full-wid mrgn-b-md">
+                    <mat-label>Wheel Diameter</mat-label>
+                    <input matInput placeholder="Ex: 12cm" name="wheelDiameter">
+                  </mat-form-field>
+                </div>
+              </div>
+
+
+              <div fxLayout="row wrap" fxLayoutAlign="space-between center">
+                <div fxFlex="100" fxFlex.gt-md="20">
+                  <mat-form-field class="full-wid mrgn-b-md">
+                    <mat-label>Purchased Date</mat-label>
+                    <!--<input matInput [matDatepicker]="picker">-->
+                    <!--<mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>-->
+                    <!--<mat-datepicker #picker></mat-datepicker>-->
+                    <input type="date" matInput name="purchasedDate" required>
+
+                  </mat-form-field>
+                </div>
+
+                <div fxFlex="100" fxFlex.gt-md="80">
+                  <mat-form-field class="full-wid mrgn-b-md">
+                    <mat-label> Expiry Date</mat-label>
+                    <input type="date" matInput name="expiryDate">
+                  </mat-form-field>
+                </div>
+              </div>
+
+              <div fxLayout="row wrap" fxLayoutAlign="space-between center">
+                <div fxFlex="100" fxFlex.gt-md="20">
+                  <mat-form-field class="full-wid mrgn-b-md">
+                    <mat-label>Invoice Number</mat-label>
+                    <input matInput placeholder="Invoice number" name="invoiceNumber" required>
+                  </mat-form-field>
+                </div>
+
+                <div fxFlex="100" fxFlex.gt-md="80">
+                  <mat-form-field class="full-wid mrgn-b-md">
+                    <!--<mat-label>Designation</mat-label>-->
+                    <mat-select placeholder="Brand Name" name="brandName" required>
+                      <mat-option value="1">abc</mat-option>
+                      <mat-option value="2">xyz</mat-option>
+                      <mat-option value="2">lmn</mat-option>
+                    </mat-select>
+                    <!--<input matInput placeholder="Licence number" name="licenceNumber" required>-->
+                  </mat-form-field>
+                </div>
+              </div>
+
+              <div fxLayout="row wrap" fxLayoutAlign="space-between center">
+                <div fxFlex="100" fxFlex.gt-md="20">
+                  <mat-form-field class="full-wid mrgn-b-md">
+                    <mat-label>Amount</mat-label>
+                    <input matInput placeholder="Amount" name="amount" required>
+                  </mat-form-field>
+                </div>
+
+                <div fxFlex="100" fxFlex.gt-md="80">
+                  <mat-form-field class="full-wid mrgn-b-md">
+                    <mat-label>Status</mat-label>
+                    <!--<mat-radio-group name="status" required>-->
+                    <!--<mat-radio-button value="1">Option 1</mat-radio-button>-->
+                    <!--<mat-radio-button value="2">Option 2</mat-radio-button>-->
+                    <!--</mat-radio-group>-->
+                    <input type="text" matInput name="status" required>
+                  </mat-form-field>
+                </div>
+              </div>
+
+              <div fxLayout="row wrap" fxLayoutAlign="space-between center">
+                <div fxFlex="100" fxFlex.gt-md="20">
+                  <mat-form-field class="full-wid mrgn-b-md">
+                    <mat-label>Remarks</mat-label>
+                    <textarea matInput></textarea>
+                  </mat-form-field>
+                </div>
+              </div>
+
+
+
+              <div fxLayout="row" fxLayoutAlign="start">
+                <!--<button *ngIf="!isUpdate" (click)="saveTireInformation()"-->
+                        <!--mat-raised-button color="accent" type="submit" [disabled]="tireForm.invalid">Save-->
+                <!--</button>-->
+                <button mat-raised-button color="accent" type="submit" disabled class="ml20 mr10">Save</button>
+
+              </div>
+            </mat-card>
+
+
+
+      </div>
+
+    </form>
+  </mat-card>
+</div>
+

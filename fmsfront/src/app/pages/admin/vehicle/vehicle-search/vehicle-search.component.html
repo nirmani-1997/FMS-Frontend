@@ -1,0 +1,80 @@
+
+<mat-card>
+  <mat-card class="container mt20">
+
+    <div fxLayout="row wrap" fxLayoutAlign="space-between center">
+      <div fxFlex="100" fxFlex.gt-md="20">
+        <mat-form-field class="full-wid mrgn-b-md">
+          <mat-label>Vehicle Type</mat-label>
+          <input matInput placeholder="Vehicle type" name="vehicleType">
+        </mat-form-field>
+      </div>
+      <div  fxFlex="100" fxFlex.gt-md="80">
+        <mat-form-field class="full-wid mrgn-b-md">
+          <mat-label>Vehicle Model</mat-label>
+          <input matInput placeholder="Vehicle model" name="vehicleModel">
+        </mat-form-field>
+      </div>
+    </div>
+
+    <div fxLayout="row wrap" fxLayoutAlign="space-between center">
+      <div fxFlex="100" fxFlex.gt-md="20">
+        <mat-form-field class="full-wid mrgn-b-md">
+          <mat-label>Vehicle Colour</mat-label>
+          <input matInput placeholder="Colour" name="colour">
+        </mat-form-field>
+      </div>
+      <div  fxFlex="100" fxFlex.gt-md="80">
+        <mat-form-field class="full-wid mrgn-b-md">
+          <mat-label>Plate Number</mat-label>
+          <input matInput placeholder="Plate number" name="plateNumber">
+        </mat-form-field>
+      </div>
+    </div>
+
+
+    <div fxLayout="row wrap" fxLayoutAlign="space-between center">
+      <div fxFlex="100" fxFlex.gt-md="20">
+        <mat-form-field class="full-wid mrgn-b-md">
+          <mat-label> Bought Date</mat-label>
+          <input type="date" matInput name="boughtDate">
+        </mat-form-field>
+      </div>
+      <div  fxFlex="100" fxFlex.gt-md="80">
+        <mat-form-field class="full-wid mrgn-b-md">
+          <mat-label>Insurance Number</mat-label>
+          <input matInput placeholder="Insurance number" name="insuranceNumber">
+        </mat-form-field>
+      </div>
+    </div>
+
+    <div fxLayout="row wrap" fxLayoutAlign="space-between center">
+     <div  fxFlex="100" fxFlex.gt-md="20">
+        <mat-form-field class="full-wid mrgn-b-md">
+          <mat-label>Status</mat-label>
+          <!--<mat-radio-group name="status" required>-->
+          <!--<mat-radio-button value="1">Option 1</mat-radio-button>-->
+          <!--<mat-radio-button value="2">Option 2</mat-radio-button>-->
+          <!--</mat-radio-group>-->
+          <input type="text" matInput name="status">
+        </mat-form-field>
+      </div>
+    </div>
+
+
+
+    <div fxLayout="row" fxLayoutAlign="start">
+
+      <!--<button (click)="searchEmployee()" mat-raised-button color="accent" type="submit">Search</button>-->
+      <button mat-raised-button color="primary" type="submit" class="mr10 ml20">Search</button>
+      <!--<button (click)="VehicleSearchform.resetForm()" mat-raised-button color="warn" type="submit">Reset</button>-->
+      <button mat-raised-button color="warn" type="submit">Reset</button>
+
+
+    </div>
+
+
+  </mat-card>
+
+</mat-card>
+
