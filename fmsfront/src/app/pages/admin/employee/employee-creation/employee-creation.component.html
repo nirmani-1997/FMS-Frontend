@@ -5,7 +5,7 @@
       <div class="gene-card-title">
         <div fxLayout="row" fxLayoutAlign="start center">
           <div fxLayout="column">
-            <h4>{{'Employee Information'}}</h4>
+            <h4><b>{{'Employee Information'}}</b></h4>
           </div>
           <span fxFlex></span>
         </div>
@@ -19,148 +19,184 @@
           <mat-tab label="General Employee Details">
             <br/>
 
-            <div fxLayout="row wrap" fxLayoutAlign="space-between center" >
+            <mat-card class="container mt20 mb10">
 
-              <div fxFlex.gt-sm="49" fxFlex.gt-xs="49" fxFlex="100" fxFlex.gt-md="49">
+            <div fxLayout="row wrap" fxLayoutAlign="space-between center">
+              <div fxFlex="100" fxFlex.gt-md="20">
                 <mat-form-field class="full-wid mrgn-b-md">
-                  <mat-label>Full name</mat-label>
-                  <!--<input matInput placeholder="Full name" name="fullName"-->
-                         <!--[(ngModel)]="employee.fullName" #FullName="ngModel" required>-->
-                  <input matInput placeholder="Full name" name="fullName" required>
+                  <mat-label>First Name</mat-label>
+                  <input matInput placeholder="First name" name="firstName" required>
                 </mat-form-field>
               </div>
+              <div  fxFlex="100" fxFlex.gt-md="80">
+                <mat-form-field class="full-wid mrgn-b-md">
+                  <mat-label>Last Name</mat-label>
+                  <input matInput placeholder="Last name" name="lastName" required>
+                </mat-form-field>
+              </div>
+            </div>
 
-              <div fxFlex.gt-sm="49" fxFlex.gt-xs="49" fxFlex="100" fxFlex.gt-md="49">
+            <div fxLayout="row wrap" fxLayoutAlign="space-between center">
+              <div fxFlex="100" fxFlex.gt-md="20">
+                <mat-form-field class="full-wid mrgn-b-md">
+                  <mat-label>Username</mat-label>
+                  <input matInput placeholder="Username" name="username" required>
+                </mat-form-field>
+              </div>
+              <div  fxFlex="100" fxFlex.gt-md="80">
                 <mat-form-field class="full-wid mrgn-b-md">
                   <mat-label>NIC</mat-label>
-                  <!--<input matInput placeholder="Full name" name="fullName"-->
-                  <!--[(ngModel)]="employee.nic" #FullName="ngModel" required>-->
                   <input matInput placeholder="NIC" name="nic" required>
                 </mat-form-field>
               </div>
-
             </div>
 
-            <div fxLayout="row wrap" fxLayoutAlign="space-between center">
-              <div fxFlex.gt-sm="49" fxFlex.gt-xs="49" fxFlex="100" fxFlex.gt-md="49">
-                <mat-form-field class="full-wid mrgn-b-md">
-                  <!--<input matInput [owlDateTime]="dateOfBirth"-->
-                         <!--[owlDateTimeTrigger]="dateOfBirth"-->
-                         <!--placeholder="Date Of Birth" name="dateOfBirth"-->
-                         <!--[(ngModel)]="employee.dateOfBirth" #DateOfBirth="ngModel" required>-->
-                  <input matInput placeholder="Date Of Birth" name="dateOfBirth" required>
-                  <!--<mat-icon matSuffix [owlDateTimeTrigger]="dateOfBirth">date_range</mat-icon>-->
-                  <!--<owl-date-time [pickerType]="'calendar'" #dateOfBirth></owl-date-time>-->
-                </mat-form-field>
-              </div>
-              <div fxFlex.gt-sm="49" fxFlex.gt-xs="49" fxFlex="100" fxFlex.gt-md="49">
-                <mat-form-field class="full-wid">
-                  <!--<mat-select placeholder="Designation" name="designationSeq"-->
-                              <!--[(ngModel)]="employee.designationSeq"-->
-                              <!--#DesignationSeq="ngModel" required>-->
-                    <!--<mat-select placeholder="Designation" name="designationSeq" required>-->
-                  <input matInput placeholder="Designation" name="designation" required>
 
-                    <!--<mat-option *ngFor="let designation of designationList"-->
-                                <!--[value]="designation.designationSeq">-->
-                      <!--{{designation.designationName}}-->
-                    <!--</mat-option>-->
-                  <!--</mat-select>-->
+            <div fxLayout="row wrap" fxLayoutAlign="space-between center">
+              <div fxFlex="100" fxFlex.gt-md="20">
+                <mat-form-field class="full-wid mrgn-b-md">
+                  <mat-label>Date of Birth</mat-label>
+                  <!--<input matInput [matDatepicker]="picker">-->
+                  <!--<mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>-->
+                  <!--<mat-datepicker #picker></mat-datepicker>-->
+                  <input type="date" matInput name="dob" required>
+
+              </mat-form-field>
+              </div>
+
+              <div fxFlex="100" fxFlex.gt-md="80">
+                <mat-form-field class="full-wid mrgn-b-md">
+                  <mat-label> Joined Date</mat-label>
+                  <input type="date" matInput name="joinedDate" required>
                 </mat-form-field>
               </div>
             </div>
 
             <div fxLayout="row wrap" fxLayoutAlign="space-between center">
-              <div fxFlex.gt-sm="49" fxFlex.gt-xs="49" fxFlex="100" fxFlex.gt-md="49">
-                <mat-form-field class="full-wid mrgn-b-md">
-                  <!--<input matInput [owlDateTime]="licenceExpiryDate"-->
-                         <!--[owlDateTimeTrigger]="licenceExpiryDate"-->
-                         <!--placeholder="Licence Expiry Date" name="licenceExpiryDate"-->
-                         <!--[(ngModel)]="employee.licenceExpiryDate" #LicenceExpiryDate="ngModel" required>-->
-                  <input matInput placeholder="Licence Expiry Date" name="licenceExpiryDate" required>
-                  <!--<mat-icon matSuffix [owlDateTimeTrigger]="licenceExpiryDate">date_range</mat-icon>-->
-                  <!--<owl-date-time [pickerType]="'calendar'" #licenceExpiryDate></owl-date-time>-->
-                </mat-form-field>
-              </div>
-              <div fxFlex.gt-sm="49" fxFlex.gt-xs="49" fxFlex="100" fxFlex.gt-md="49">
+              <div fxFlex="100" fxFlex.gt-md="20">
                 <mat-form-field class="full-wid mrgn-b-md">
                   <mat-label>Licence Number</mat-label>
-                  <!--<input matInput placeholder="Licence Number" name="licenceNumber"-->
-                         <!--[(ngModel)]="employee.licenceNumber" #LicenceNumber="ngModel" required>-->
-                  <input matInput placeholder="Licence Number" name="licenceNumber" required>
+                  <input matInput placeholder="Licence number" name="licenceNumber" required>
                 </mat-form-field>
               </div>
-            </div>
 
-            <div fxLayout="row wrap" fxLayoutAlign="space-between center">
-              <div fxFlex.gt-sm="49" fxFlex.gt-xs="49" fxFlex="100" fxFlex.gt-md="49">
+              <div fxFlex="100" fxFlex.gt-md="80">
                 <mat-form-field class="full-wid mrgn-b-md">
-                  <mat-label>Per Km Rate</mat-label>
-                  <!--<input matInput placeholder="Per KM Rate" name="perKmRate"-->
-                         <!--[(ngModel)]="employee.perKmRate" #PerKmRate="ngModel" type="number" required>-->
-                  <input matInput placeholder="Per KM Rate" name="perKmRate" type="number" required>
-                </mat-form-field>
-              </div>
-              <div fxFlex.gt-sm="49" fxFlex.gt-xs="49" fxFlex="100" fxFlex.gt-md="49">
-                <mat-form-field class="full-wid">
-                  <mat-label>Activation</mat-label>
-                  <!--<mat-select placeholder="Activation" name="activeStatus"-->
-                              <!--[(ngModel)]="employee.activeStatusSeq"-->
-                              <!--required-->
-                              <!--#ActiveStatus="ngModel">-->
-                    <!--<mat-option *ngFor="let activeStatus of activeStatusList"-->
-                                <!--[value]="activeStatus.status">-->
-                      <!--{{activeStatus.statusDescription}}-->
-                    <!--</mat-option>-->
-                  <!--</mat-select>-->
-                  <input matInput placeholder="Activation" name="activeStatus" required>
-                  <!---->
-                  <!--<div *ngIf="ActiveStatus.errors && (ActiveStatus.dirty || ActiveStatus.touched)">-->
-                    <!--<small class="gene-block"-->
-                           <!--*ngIf="ActiveStatus.errors.required && ActiveStatus.touched"-->
-                           <!--class="mat-text-warn">-->
-                      <!--You must select an activation status.-->
-                    <!--</small>-->
-                  <!--</div>-->
+                  <mat-label> Licence Expiry Date</mat-label>
+                  <input type="date" matInput name="licenceExpiryDate" required>
                 </mat-form-field>
               </div>
             </div>
 
             <div fxLayout="row wrap" fxLayoutAlign="space-between center">
-              <div fxFlex.gt-sm="49" fxFlex.gt-xs="49" fxFlex="100" fxFlex.gt-md="49">
-                <mat-form-field class="full-wid">
-                  <mat-label>Status</mat-label>
-                  <!--<mat-select placeholder="Status" name="status" [(ngModel)]="employee.status" #Status="ngModel" required>-->
-                    <!--<mat-option *ngFor="let status of statusList" [value]="status.statusSeq">-->
-                      <!--{{status.status}}-->
-                    <!--</mat-option>-->
-                  <!--</mat-select>-->
-                  <input matInput placeholder="Status" name="status" required>
-
-                  <!--<div *ngIf="Status.errors && (Status.dirty || Status.touched)">-->
-                    <!--<small class="gene-block" *ngIf="Status.errors.required && Status.touched" class="mat-text-warn">-->
-                      <!--You must select a status.-->
-                    <!--</small>-->
-                  <!--</div>-->
+              <div fxFlex="100" fxFlex.gt-md="20">
+                <mat-form-field class="full-wid mrgn-b-md">
+                  <!--<mat-label>Designation</mat-label>-->
+                  <mat-select placeholder="Designation" name="designation" required>
+                    <mat-option value="1">Driver</mat-option>
+                    <mat-option value="2">Helper</mat-option>
+                  </mat-select>
+                  <!--<input matInput placeholder="Licence number" name="licenceNumber" required>-->
                 </mat-form-field>
               </div>
-              <div fxFlex.gt-sm="49" fxFlex.gt-xs="49" fxFlex="100" fxFlex.gt-md="49"></div>
+
+              <div fxFlex="100" fxFlex.gt-md="80">
+                <mat-form-field class="full-wid mrgn-b-md">
+                  <mat-label>Status</mat-label>
+                  <!--<mat-radio-group name="status" required>-->
+                    <!--<mat-radio-button value="1">Option 1</mat-radio-button>-->
+                    <!--<mat-radio-button value="2">Option 2</mat-radio-button>-->
+                  <!--</mat-radio-group>-->
+                  <input type="text" matInput name="status" required>
+                </mat-form-field>
+              </div>
             </div>
+
+
             <div fxLayout="row" fxLayoutAlign="start">
               <!--<button mat-button type="button" disabled (click)="previousStep()">Previous</button>-->
-              <button mat-button type="button" disabled >Previous</button>
-
-              <!--<button mat-button mat-raised-button color="accent" (click)="nextStep()"-->
-                      <!--type="button">Next-->
-              <!--</button>-->
-              <button mat-button mat-raised-button color="accent" type="button">Next
-              </button>
-
+              <button mat-button type="button" disabled class="ml20 mr10">Previous</button>
+              <!--<button mat-button mat-raised-button color="accent" (click)="nextStep()" type="button">Next</button>-->
+              <button mat-button mat-raised-button color="accent" type="button">Next</button>
             </div>
+            </mat-card>
 
           </mat-tab>
 
-          <mat-tab label="Employee Contact Details"></mat-tab>
+          <mat-tab label="Employee Contact Details">
+            <br/>
+
+            <mat-card class="container mt20 mb10">
+
+            <div fxLayout="row wrap" fxLayoutAlign="space-between center">
+              <div fxFlex="100" fxFlex.gt-md="20">
+                <mat-form-field class="full-wid mrgn-b-md">
+                  <mat-label>Address 1</mat-label>
+                  <textarea matInput placeholder="Ex. 100 Main St" required></textarea>
+                </mat-form-field>
+              </div>
+            </div>
+
+            <div fxLayout="row wrap" fxLayoutAlign="space-between center">
+              <div fxFlex="100" fxFlex.gt-md="20">
+                <mat-form-field class="full-wid mrgn-b-md">
+                  <mat-label>Address 2</mat-label>
+                  <textarea matInput></textarea>
+                </mat-form-field>
+              </div>
+            </div>
+
+
+            <!--<div fxLayout="row wrap" fxLayoutAlign="space-between center">-->
+              <!--<div fxFlex="100" fxFlex.gt-md="20">-->
+            <table>
+              <tr>
+              <td>
+                <mat-form-field class="full-wid mrgn-b-md">
+                <mat-label>City</mat-label>
+                <input matInput placeholder="Ex. Monaragala" required>
+              </mat-form-field>
+              </td>
+              <td>
+                <mat-form-field class="full-wid mrgn-b-md">
+                <mat-label>Postal Code</mat-label>
+                <input matInput #postalCode maxlength="5" placeholder="Ex. 91000" required>
+                <mat-hint align="end">{{postalCode.value.length}} / 5</mat-hint>
+              </mat-form-field></td>
+            </tr>
+
+            </table>
+              <!--</div>-->
+            <!--</div>-->
+
+
+            <div fxLayout="row wrap" fxLayoutAlign="space-between center">
+              <div fxFlex="100" fxFlex.gt-md="20">
+                <mat-form-field class="full-wid mrgn-b-md">
+                  <mat-label>Phone Number</mat-label>
+                  <input matInput placeholder="Phone number" name="phoneNumber" required>
+                  <mat-icon matSuffix>phone</mat-icon>
+                </mat-form-field>
+              </div>
+
+              <div fxFlex="100" fxFlex.gt-md="80">
+                <mat-form-field class="full-wid mrgn-b-md">
+                  <mat-label> Email</mat-label>
+                  <input type="email" matInput placeholder="Ex. abc@gmail.com" name="email" required>
+                </mat-form-field>
+              </div>
+            </div>
+
+            <div fxLayout="row" fxLayoutAlign="start">
+              <!--<button mat-button type="button" (click)="previousStep()">Previous</button>-->
+              <button mat-button type="button" class="mr10 ml20">Previous</button>
+              <!--<button mat-button mat-raised-button color="accent" (click)="saveEmployee()" -->
+                      <!--type="submit" [disabled]="employeeForm.invalid">Save</button>-->
+              <button mat-button mat-raised-button color="accent"type="submit">Save</button>
+            </div>
+            </mat-card>
+
+          </mat-tab>
 
         </mat-tab-group>
       </div>

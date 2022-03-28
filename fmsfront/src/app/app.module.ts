@@ -22,6 +22,10 @@ import {MatDividerModule} from '@angular/material/divider';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatGridListModule} from '@angular/material/grid-list';
+import {ScrollingModule} from '@angular/cdk/scrolling';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+
+
 import {MatTreeModule} from '@angular/material/tree';
 // import {
 //   DateTimeAdapter,
@@ -47,6 +51,17 @@ import { EmployeeCreationComponent } from './pages/admin/employee/employee-creat
 import { EmployeeSearchComponent } from './pages/admin/employee/employee-search/employee-search.component';
 import { EmployeeComponent } from './pages/admin/employee/employee.component';
 import { VehicleComponent } from './pages/admin/vehicle/vehicle.component';
+import { TireComponent } from './pages/admin/tire/tire.component';
+import { FuelComponent } from './pages/admin/fuel/fuel.component';
+import { JobComponent } from './pages/admin/job/job.component';
+import { ServicesComponent } from './pages/admin/services/services.component';
+import {MatSelectModule} from "@angular/material/select";
+import {MatRadioButton, MatRadioGroup, MatRadioModule} from '@angular/material/radio';
+import { VehicleCreationComponent } from './pages/admin/vehicle/vehicle-creation/vehicle-creation.component';
+import { VehicleSearchComponent } from './pages/admin/vehicle/vehicle-search/vehicle-search.component';
+import { TireCreationComponent } from './pages/admin/tire/tire-creation/tire-creation.component';
+import { TireSearchComponent } from './pages/admin/tire/tire-search/tire-search.component';
+// import {MatRadioButton, MatRadioGroup} from "@angular/material/radio";
 
 
 @NgModule({
@@ -66,6 +81,14 @@ import { VehicleComponent } from './pages/admin/vehicle/vehicle.component';
     EmployeeSearchComponent,
     EmployeeComponent,
     VehicleComponent,
+    TireComponent,
+    FuelComponent,
+    JobComponent,
+    ServicesComponent,
+    VehicleCreationComponent,
+    VehicleSearchComponent,
+    TireCreationComponent,
+    TireSearchComponent,
 
   ],
   imports: [
@@ -88,13 +111,25 @@ import { VehicleComponent } from './pages/admin/vehicle/vehicle.component';
     MatDividerModule,
     FlexLayoutModule,
     MatSidenavModule,
-    MatGridListModule
+    MatGridListModule,
+    ScrollingModule,
+    MatDatepickerModule,
+    MatSelectModule,
+    MatRadioModule,
+
+
+
+
+
 
     // OwlDateTimeModule,
     // OwlNativeDateTimeModule
   ],
+
   providers: [authInterceptorProviders],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+}
 
